@@ -17,5 +17,23 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.17"
+  },
+  "vue": {
+    "devServer": {
+      "proxy": {
+        "/dianying": {
+          "target": "http://m.maoyan.com",
+          "changeOrigin": true
+        },
+        "/ajax": {
+          "target": "http://m.maoyan.com",
+          "changeOrigin": true
+        },
+        "/movie": {
+          "target": "http://m.maoyan.com",
+          "changeOrigin": true
+        }
+      }
+    }
   }
 }
